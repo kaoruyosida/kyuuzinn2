@@ -48,7 +48,7 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin: 0 15px;
 }
 
@@ -95,22 +95,22 @@ p {
 
 .instagram-feed {
     display: flex;
-    justify-content: space-around; /* 横並びにして間隔を均等に */
-    flex-wrap: wrap; /* 必要に応じて折り返し */
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .instagram-feed blockquote {
-    max-width: 300px; /* 幅を300pxに制限 */
-    margin: 10px; /* マージンを調整 */
-    flex: 1; /* 要素が均等に並ぶようにする */
+    max-width: 300px;
+    margin: 10px;
+    flex: 1;
 }
 
 .instagram-feed blockquote div {
-    padding: 8px; /* 内側の余白を調整 */
+    padding: 8px;
 }
 
 .instagram-feed blockquote a {
-    text-align: center; /* テキストを中央揃え */
+    text-align: center;
     display: block;
 }
 
@@ -163,4 +163,73 @@ a:hover {
 
 .apply-button:hover {
     background-color: #e64a19;
+}
+
+/* メディアクエリを追加 */
+@media (max-width: 768px) {
+    header h1.shuji {
+        font-size: 2em;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .apply-now h2 {
+        font-size: 1.5em;
+    }
+
+    .apply-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    .instagram-feed {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .instagram-feed blockquote {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1.shuji {
+        font-size: 1.8em;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        font-size: 0.9em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .apply-now h2 {
+        font-size: 1.2em;
+    }
+
+    .apply-button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
 }
