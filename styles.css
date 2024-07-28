@@ -66,7 +66,7 @@ main {
     padding: 20px;
 }
 
-.intro, .job-details, .employment-details, .company-details, .training-support, .work-life-balance, .message {
+.intro, .job-details, .employment-details, .company-details, .training-support, .work-life-balance, .message, .apply-now {
     background-color: white;
     padding: 20px;
     margin-bottom: 20px;
